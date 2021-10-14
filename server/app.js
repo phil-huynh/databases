@@ -1,4 +1,5 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var db = require('./db');
 
 // Middleware
@@ -18,6 +19,7 @@ app.set('port', 3000);
 app.use(morgan('dev'));
 app.use(cors());
 app.use(express.json());
+app.use(bodyParser.json());
 
 // Set up our routes
 app.use('/classes', router);
