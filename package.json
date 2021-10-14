@@ -9,16 +9,22 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "start": "node ./server/app.js",
+    "start": "npx nodemon ./server/app.js",
     "start:es6": "npx babel-node ./server/app.js",
     "test": "jest",
     "lint": "eslint ./"
   },
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^0.21.4",
+=======
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+>>>>>>> 260f8c00a8ced4def6baf6d71f65b00d889d5cf3
     "cors": "^2.8.5",
     "express": "4.17.1",
     "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   },
